@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "core-3.5.2.jar",
+        "javase-3.5.2.jar"
+    ]
+}

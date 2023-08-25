@@ -16,8 +16,6 @@ public class Main {
         switch (choice) {
             case 1:
                 System.out.println("Enter the you want to encode");
-                // the message can contain spaces and special characters but will always be a
-                // string and will end with a newline
                 String message = readString();
                 generateSimpleQR(message);
                 break;
