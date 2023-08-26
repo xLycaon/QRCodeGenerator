@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/lycaon/QRCodeGenerator/core-3.5.2.jar",
+        "/home/lycaon/QRCodeGenerator/javase-3.5.2.jar"
+    ]
+}
