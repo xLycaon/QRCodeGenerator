@@ -27,7 +27,7 @@ public class Main {
     }
 
     private static void generateQRCode(String message) throws WriterException, IOException {
-        String path = "QRcode.jpg";
+        String path = "QRcode.png";
         System.out.println("The message is: " + message);
         BitMatrix matrix = new MultiFormatWriter().encode(message, BarcodeFormat.QR_CODE, 500, 500);
         
@@ -35,7 +35,6 @@ public class Main {
          if(Paths.get(path).toFile().exists()) {
             Paths.get(path).toFile().delete();
         }
-
         MatrixToImageWriter.writeToPath(matrix, "png", Paths.get(path));
         ImageProcessor imageProcessor = new ImageProcessor(Paths.get(path).toFile());
         BufferedImage qrCode = imageProcessor.colorQR(Color.BLACK);
